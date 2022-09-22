@@ -14,8 +14,9 @@ namespace RaceWinners
 
             for (int i = 0; i < data.Count; i++)
             {
-                // Combine the ranks to print as a list
-                var ranks = String.Join(", ", data[i].Ranks);
+                double points = 0;
+                
+                for (int rank: data[i].Ranks)
                 
                 Console.WriteLine($"{data[i].Name} - [{ranks}]");
             }
